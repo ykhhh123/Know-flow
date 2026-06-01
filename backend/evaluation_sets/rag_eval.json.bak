@@ -1,0 +1,498 @@
+{
+  "apiKey": "",
+  "provider": "openai",
+  "baseUrl": null,
+  "topK": 5,
+  "useLocalEmbedding": true,
+  "retrievalMode": "hybrid",
+  "useRerank": true,
+  "rerankProvider": "bge",
+  "rerankModel": "BAAI/bge-reranker-base",
+  "cases": [
+    {
+      "query": "In the EVEN paper, what two types of noise does multimodal recommendation mainly face, and what effects do they cause?",
+      "expected_sources": [
+        {
+          "chunk_id": "cac212a0-a4c8-4bac-98dd-b1586706008d",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 14
+        },
+        {
+          "chunk_id": "5118adc0-100a-4e9d-8a81-ec147fcbbbc4",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 15
+        },
+        {
+          "chunk_id": "8628bb34-a0ec-4fc1-81d0-cc1a7faa8674",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 16
+        }
+      ]
+    },
+    {
+      "query": "How does EVEN handle semantic prior noise in multimodal content?",
+      "expected_sources": [
+        {
+          "chunk_id": "322b589b-6f87-4a56-a78a-f66276e60943",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 45
+        },
+        {
+          "chunk_id": "3fdcae83-7ef6-4ccf-87c0-99a831621939",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 48
+        }
+      ]
+    },
+    {
+      "query": "How does EVEN reduce the impact of user-item interaction noise through graph pruning?",
+      "expected_sources": [
+        {
+          "chunk_id": "b3ccb35e-2766-4c61-aec0-c9ceb046f3ed",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 50
+        },
+        {
+          "chunk_id": "a2c9de72-6180-4d50-9d56-b55290a6678d",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 54
+        },
+        {
+          "chunk_id": "1fe62b3a-6b07-408a-af0f-83d7b85581bf",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 57
+        },
+        {
+          "chunk_id": "33f9deb5-a31c-4db6-8c73-1a1fefcde4e3",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 58
+        }
+      ]
+    },
+    {
+      "query": "What is the role of self-guided structure learning in EVEN?",
+      "expected_sources": [
+        {
+          "chunk_id": "0c8b03bc-3b9c-4cfa-a3eb-8735857eaddc",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 23
+        },
+        {
+          "chunk_id": "da73dbe9-bd43-4a9a-b5d7-10bb32c9d1b7",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 66
+        },
+        {
+          "chunk_id": "e7f4f68b-152f-4e53-8324-36e2d1c709db",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 67
+        }
+      ]
+    },
+    {
+      "query": "Why does SMORE argue that directly fusing visual and textual modalities can amplify cross-modal noise?",
+      "expected_sources": [
+        {
+          "chunk_id": "e4690608-97bb-4274-8d29-51fa75c05837",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 15
+        },
+        {
+          "chunk_id": "93d033c4-4ea0-4847-82fc-b0a22a2ebaca",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 16
+        },
+        {
+          "chunk_id": "499e4174-300d-436b-a48d-e4f89391068a",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 20
+        },
+        {
+          "chunk_id": "d7530082-f152-47dc-b9bd-cab0de9a5e6a",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 21
+        }
+      ]
+    },
+    {
+      "query": "What are the three main core modules in the SMORE framework?",
+      "expected_sources": [
+        {
+          "chunk_id": "0ef5c020-b710-4f89-9e46-b2b269dbc476",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 26
+        },
+        {
+          "chunk_id": "6f58e58c-8196-44cc-a19d-0b0fec9f21ea",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 29
+        },
+        {
+          "chunk_id": "847e1e17-eab1-4e34-bc83-ae670f985b05",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 30
+        }
+      ]
+    },
+    {
+      "query": "How does SMORE use frequency-domain transformation and dynamic filters to implement modality fusion and denoising?",
+      "expected_sources": [
+        {
+          "chunk_id": "ed0a8d41-f977-4d7c-91bb-a36123eee4d8",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 27
+        },
+        {
+          "chunk_id": "c9534f2d-49df-4e2a-bb19-b849f7acd153",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 28
+        },
+        {
+          "chunk_id": "c75bc6c6-93cf-412f-acaa-5d181b2329fa",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 51
+        },
+        {
+          "chunk_id": "b099db79-df21-407d-8114-b81e20b41fe5",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 57
+        },
+        {
+          "chunk_id": "93ab03aa-50a5-47aa-b718-2e04e5d59e81",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 58
+        }
+      ]
+    },
+    {
+      "query": "Why does PGL argue that existing GNN-based multimedia recommendation methods do not fully exploit personalized information?",
+      "expected_sources": [
+        {
+          "chunk_id": "e071fbc2-345a-4351-a81c-711b2c0fc91b",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 6
+        },
+        {
+          "chunk_id": "fc6d633a-2e90-485b-a282-3e0d874b2b27",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 7
+        },
+        {
+          "chunk_id": "19d17415-2c37-4973-ba49-961a74b04211",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 20
+        }
+      ]
+    },
+    {
+      "query": "What is the core idea of principal graph learning in PGL?",
+      "expected_sources": [
+        {
+          "chunk_id": "7ed4e7a4-a886-4647-b7e4-2f4ad493a8bd",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 8
+        },
+        {
+          "chunk_id": "765f9a4b-fc7d-4794-a352-df59f9b010da",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 25
+        },
+        {
+          "chunk_id": "ad5203cd-4135-43c1-b788-07125bd64c5f",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 28
+        }
+      ]
+    },
+    {
+      "query": "In PGL, which graphs are used for message passing during training and inference, and why is this design used?",
+      "expected_sources": [
+        {
+          "chunk_id": "765f9a4b-fc7d-4794-a352-df59f9b010da",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 25
+        },
+        {
+          "chunk_id": "2c966784-feeb-4d71-91e5-d0ab308b4757",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 26
+        }
+      ]
+    },
+    {
+      "query": "Which datasets and baseline models are used in the EVEN experiments?",
+      "expected_sources": [
+        {
+          "chunk_id": "2c478890-c7ac-4c9e-986f-3bb56eab4d26",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 77
+        },
+        {
+          "chunk_id": "2ce3d3be-1b2f-45e3-9306-7998a1e9b4cf",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 78
+        },
+        {
+          "chunk_id": "bf3e43b8-5a74-49a7-9a75-a69545c7e5c7",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 79
+        },
+        {
+          "chunk_id": "6026b929-dd65-40da-8c38-48bf69b6bc40",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 80
+        }
+      ]
+    },
+    {
+      "query": "What performance improvements does EVEN achieve compared with the strongest baselines and existing denoising methods?",
+      "expected_sources": [
+        {
+          "chunk_id": "3a6e4e1a-5702-4ff5-9946-a6011805a003",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 81
+        },
+        {
+          "chunk_id": "9225b29b-7948-4160-b90f-485009d9a4d1",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 82
+        },
+        {
+          "chunk_id": "3e286116-b713-417a-80b9-e5934b1150c3",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 83
+        },
+        {
+          "chunk_id": "a5740ef6-9973-4afa-a493-dd0a48cc7995",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 84
+        },
+        {
+          "chunk_id": "473293a1-3393-43df-9ab6-2f148ab6c512",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 94
+        }
+      ]
+    },
+    {
+      "query": "Why does EVEN not introduce additional inference-time cost despite performing graph denoising?",
+      "expected_sources": [
+        {
+          "chunk_id": "6c7bb8d7-85f5-4c35-ad5b-c704d194808d",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 85
+        },
+        {
+          "chunk_id": "05a958cb-26f4-46ae-8bdc-a0ef763f6f52",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 86
+        },
+        {
+          "chunk_id": "9e0f2b3d-4e0f-4cef-a66f-bdff87bc0ed8",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 101
+        },
+        {
+          "chunk_id": "36211032-176e-4a3d-9391-a343bda8d559",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 102
+        }
+      ]
+    },
+    {
+      "query": "What are the ablation variants of EVEN, and what do the ablation results show?",
+      "expected_sources": [
+        {
+          "chunk_id": "36211032-176e-4a3d-9391-a343bda8d559",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 102
+        },
+        {
+          "chunk_id": "aec7d8e9-79cd-4ced-a2cc-ef0f2d8135c6",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 103
+        },
+        {
+          "chunk_id": "961c9122-33cc-4a24-825e-8865dc2a5c52",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 104
+        },
+        {
+          "chunk_id": "e0c16e49-7b49-43ba-887e-fbc3474dac87",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 105
+        },
+        {
+          "chunk_id": "3aedf1f0-6027-4202-ac9b-b7431ffd636e",
+          "document_id": "39f1a577-76cd-4330-8f25-2eb91aa9cd87",
+          "chunk_index": 106
+        }
+      ]
+    },
+    {
+      "query": "How does SMORE build modal-specific and fusion item-item views in its multi-modal graph learning module?",
+      "expected_sources": [
+        {
+          "chunk_id": "0b105b75-3cd0-479f-8b7c-cf91f1722318",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 71
+        },
+        {
+          "chunk_id": "fb915d8c-4196-436a-9ed3-95d0e9b6df5f",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 72
+        },
+        {
+          "chunk_id": "ffbb90cd-4fbb-47ac-8d0c-daaa194520ea",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 73
+        },
+        {
+          "chunk_id": "2fb49378-d4d5-41a2-8de8-27cdc5c1d567",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 74
+        },
+        {
+          "chunk_id": "db560ced-933a-4cf3-8b54-3c223712fb32",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 75
+        }
+      ]
+    },
+    {
+      "query": "What is the purpose of the user-item behavioral view in SMORE, and how are high-order behavioral features obtained?",
+      "expected_sources": [
+        {
+          "chunk_id": "db560ced-933a-4cf3-8b54-3c223712fb32",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 75
+        },
+        {
+          "chunk_id": "c4b9a375-402c-46b9-9dc4-cdb224d7a8e8",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 76
+        },
+        {
+          "chunk_id": "eab26151-0725-4a6f-8178-1bb8303d8491",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 77
+        },
+        {
+          "chunk_id": "0bde8e1b-d810-4058-8463-9c5fb98379fa",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 78
+        }
+      ]
+    },
+    {
+      "query": "How does the modality-aware preference module in SMORE balance uni-modal and fusion preferences?",
+      "expected_sources": [
+        {
+          "chunk_id": "0bde8e1b-d810-4058-8463-9c5fb98379fa",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 78
+        },
+        {
+          "chunk_id": "be567e31-eddc-457a-b70a-6b80f9b6c446",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 79
+        },
+        {
+          "chunk_id": "8d60db7a-9b47-4020-be63-08868882756e",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 80
+        },
+        {
+          "chunk_id": "ab189949-82e1-4983-8b2c-dc0833889100",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 81
+        },
+        {
+          "chunk_id": "c5e27c39-9737-47b4-b0e0-62017e45afe6",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 82
+        }
+      ]
+    },
+    {
+      "query": "What do the SMORE ablation studies reveal about spectrum modality fusion, multi-modal graph learning, and modality-aware preference modeling?",
+      "expected_sources": [
+        {
+          "chunk_id": "a68a6dbf-2b39-434a-b46d-eb3e87c09e5c",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 117
+        },
+        {
+          "chunk_id": "f4b5f8ef-de14-4a32-9483-8a9a8207c26f",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 118
+        },
+        {
+          "chunk_id": "ce4d1b3f-a5e3-4418-bf88-d416d3bb1996",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 119
+        },
+        {
+          "chunk_id": "3b9f4f30-1bc4-4802-8ee3-4f1dc2a20775",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 120
+        },
+        {
+          "chunk_id": "e44a1ffa-52c1-4b65-9e08-7a0f5fffbb93",
+          "document_id": "22a6edc2-9fe1-4ba9-bb49-9dfe81e4816a",
+          "chunk_index": 121
+        }
+      ]
+    },
+    {
+      "query": "From the spectral graph perspective, how does PGL distinguish global structural features from local individual information?",
+      "expected_sources": [
+        {
+          "chunk_id": "27ba36ca-8896-4b32-818d-91273047c427",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 18
+        },
+        {
+          "chunk_id": "b86c9d53-fb47-4367-af1d-18aa63d18c2a",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 19
+        },
+        {
+          "chunk_id": "19d17415-2c37-4973-ba49-961a74b04211",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 20
+        }
+      ]
+    },
+    {
+      "query": "How do PGL's global-aware and local-aware extraction operators construct the principal subgraph?",
+      "expected_sources": [
+        {
+          "chunk_id": "ad5203cd-4135-43c1-b788-07125bd64c5f",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 28
+        },
+        {
+          "chunk_id": "0c0bccca-657b-4a08-b43a-0b1ea7155027",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 29
+        },
+        {
+          "chunk_id": "dfa761d5-b46d-4f19-89e1-0c2cfbbd36d5",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 30
+        },
+        {
+          "chunk_id": "e3e4514d-64fb-4724-8a82-a57d277f106e",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 32
+        },
+        {
+          "chunk_id": "3fb4f316-8808-49e6-a029-ea3a5009515e",
+          "document_id": "b9ee6de9-12b5-4d80-bab9-da26899d0db7",
+          "chunk_index": 33
+        }
+      ]
+    }
+  ]
+}

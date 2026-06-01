@@ -1,0 +1,26 @@
+
+> knowflow@0.1.0 dev
+> next dev --webpack
+
+▲ Next.js 16.2.6 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.10:3000
+- Environments: .env.local
+✓ Ready in 834ms
+
+○ Compiling / ...
+ GET / 200 in 855ms (next.js: 578ms, application-code: 277ms)
+ GET / 200 in 5.4s (next.js: 5.1s, application-code: 283ms)
+ GET / 200 in 45ms (next.js: 6ms, application-code: 40ms)
+ GET /knowledge 200 in 1193ms (next.js: 990ms, application-code: 202ms)
+ GET / 200 in 54ms (next.js: 15ms, application-code: 39ms)
+ GET / 200 in 53ms (next.js: 6ms, application-code: 47ms)
+ GET /knowledge 200 in 41ms (next.js: 4ms, application-code: 37ms)
+○ Compiling /chat ...
+ GET /chat 200 in 3.6s (next.js: 3.3s, application-code: 215ms)
+ GET /memories 200 in 708ms (next.js: 600ms, application-code: 107ms)
+ GET / 200 in 66ms (next.js: 13ms, application-code: 53ms)
+ GET /chat 200 in 39ms (next.js: 13ms, application-code: 25ms)
+ GET /knowledge 200 in 34ms (next.js: 12ms, application-code: 22ms)
+ GET /chat 200 in 24ms (next.js: 3ms, application-code: 20ms)
+[?25h

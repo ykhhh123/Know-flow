@@ -1,0 +1,118 @@
+INFO:     Started server process [8356]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+ERROR:    Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 419, in run_asgi
+  |     result = await app(  # type: ignore[func-returns-value]
+  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+  |     return await self.app(scope, receive, send)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+  |     await super().__call__(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\applications.py", line 123, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+  |     raise exc
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+  |     await self.simple_response(scope, receive, send, request_headers=headers)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+  |     await self.app(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+  |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+  |     raise exc
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\routing.py", line 762, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\routing.py", line 782, in app
+  |     await route.handle(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\routing.py", line 297, in handle
+  |     await self.app(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\routing.py", line 77, in app
+  |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+  |     raise exc
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\routing.py", line 75, in app
+  |     await response(scope, receive, send)
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\responses.py", line 254, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\52281\Know flow\backend\api\chat.py", line 187, in generate
+    |     async for event in llm_service.stream_chat_events(
+    |   File "D:\52281\Know flow\backend\services\llm_service.py", line 303, in stream_chat_events
+    |     async for chunk in response:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\litellm\utils.py", line 8712, in __anext__
+    |     async for chunk in self.completion_stream:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\openai\_streaming.py", line 116, in __aiter__
+    |     async for item in self._iterator:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\openai\_streaming.py", line 129, in __stream__
+    |     async for sse in iterator:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\openai\_streaming.py", line 120, in _iter_events
+    |     async for sse in self._decoder.aiter(self.response.aiter_lines()):
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\openai\_streaming.py", line 231, in aiter
+    |     async for line in iterator:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpx\_models.py", line 967, in aiter_lines
+    |     async for text in self.aiter_text():
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpx\_models.py", line 954, in aiter_text
+    |     async for byte_content in self.aiter_bytes():
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpx\_models.py", line 933, in aiter_bytes
+    |     async for raw_bytes in self.aiter_raw():
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpx\_models.py", line 991, in aiter_raw
+    |     async for raw_stream_bytes in self.stream:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpx\_client.py", line 147, in __aiter__
+    |     async for chunk in self._stream:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpx\_transports\default.py", line 252, in __aiter__
+    |     async for part in self._httpcore_stream:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 407, in __aiter__
+    |     raise exc from None
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 403, in __aiter__
+    |     async for part in self._stream:
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpcore\_async\http11.py", line 342, in __aiter__
+    |     raise exc
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpcore\_async\http11.py", line 334, in __aiter__
+    |     async for chunk in self._connection._receive_response_body(**kwargs):
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpcore\_async\http11.py", line 203, in _receive_response_body
+    |     event = await self._receive_event(timeout=timeout)
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpcore\_async\http11.py", line 217, in _receive_event
+    |     data = await self._network_stream.read(
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\httpcore\_backends\anyio.py", line 35, in read
+    |     return await self._stream.receive(max_bytes=max_bytes)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\anyio\streams\tls.py", line 239, in receive
+    |     data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\anyio\streams\tls.py", line 182, in _call_sslobject_method
+    |     data = await self.transport_stream.receive()
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1284, in receive
+    |     await self._protocol.read_event.wait()
+    |   File "D:\anaconda3\Lib\asyncio\locks.py", line 213, in wait
+    |     await fut
+    | asyncio.exceptions.CancelledError: Cancelled via cancel scope 14aaf47b910 by <Task pending name='Task-51' coro=<RequestResponseCycle.run_asgi() running at D:\52281\Know flow\backend\venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py:419> cb=[set.discard()]>
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\responses.py", line 257, in wrap
+    |     await func()
+    |   File "D:\52281\Know flow\backend\venv\Lib\site-packages\starlette\responses.py", line 246, in stream_response
+    |     async for chunk in self.body_iterator:
+    |   File "D:\52281\Know flow\backend\api\chat.py", line 252, in generate
+    |     except asyncio.CancelledError:
+    |            ^^^^^^^
+    | UnboundLocalError: cannot access local variable 'asyncio' where it is not associated with a value
+    +------------------------------------
