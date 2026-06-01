@@ -382,7 +382,3 @@ docker-compose down
 - 后端已增加 `tests/` 目录和基础健康检查测试。
 - 文档上传支持 PDF、Word、TXT、Markdown，当前前端文件选择也限制在这些格式。
 - `docker-compose.yml` 已包含数据库、后端和前端服务；如只需数据库，可单独启动 `postgres` 服务。
-
-## 许可证
-
-当前仓库未看到独立 `LICENSE` 文件。如需开源分发，请先补充许可证文件并在本文档中更新许可信息。
