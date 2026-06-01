@@ -53,5 +53,4 @@ backend/**/*.pyc
 # local runtime artifacts
 server.log
 uploads/
-screenshots/
 local_embedding/
